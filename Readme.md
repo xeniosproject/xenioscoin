@@ -19,7 +19,7 @@ Webwallet: https://wallet.xenioscoin.com
 
 # To work with the source code please download Xenios src file (xenios-source.tar.gz)
 
-# How do I setup Xenios Node on Ubuntu Server 18.04
+# How do I setup Xenios Node on Ubuntu Server 18.04? (The easy way!!!)
 
 #Use Ubuntu 18.04 LTS 64bit.
 
