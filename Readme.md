@@ -14,15 +14,19 @@ Xenios investments add extra value to Xenios, as all their net profit will be ad
 The quaranteed minimum price of Xenios will constantly be growing higher. 
 
 Website: https://xenioscoin.com
+
 Webwallet: https://wallet.xenioscoin.com
 
 # To work with the source code please download Xenios src file (xenios-source.tar.gz)
 
-# How do I setup Xenios Node on Ubuntu Server 18.04
+# How do I setup Xenios Node on Ubuntu Server 18.04? (The easy way!!!)
+
 #Use Ubuntu 18.04 LTS 64bit.
 
 # Update your Ubuntu machine.
+
 sudo apt-get update
+
 sudo apt-get upgrade
 
 # Install the required dependencies.
@@ -31,18 +35,23 @@ sudo apt-get install build-essential libtool autotools-dev automake pkg-config l
 sudo apt-get install libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler unzip software-properties-common
 
 # Install Berkeley DB.
+
 sudo add-apt-repository ppa:bitcoin/bitcoin
+
 sudo apt-get update
+
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 # Download the linux daemon and tools
 
 wget "https://github.com/xeniosproject/xenioscoin/blob/master/xenios-daemon-linux.tar.gz" -O xenios-daemon-linux.tar.gz
+
 wget "https://github.com/xeniosproject/xenioscoin/blob/master/xenios-qt-linux.tar.gz" -O xenios-qt-linux.tar.gz
 
 #Extract the tar file.
 
 tar -xzvf xenios-daemon-linux.tar.gz
+
 tar -xzvf xenios-qt-linux.tar.gz
 
 #Install the daemon.
