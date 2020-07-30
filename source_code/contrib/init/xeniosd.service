@@ -1,0 +1,22 @@
+[Unit]
+Description=Xenios's distributed currency daemon
+After=network.target
+
+[Service]
+User=xenioscore
+Group=xenioscore
+
+Type=forking
+PIDFile=/var/lib/xeniosd/xeniosd.pid
+ExecStart=/usr/bin/xeniosd -daemon -pid=/var/lib/xeniosd/xeniosd.pid \
+-conf=/etc/xenioscore/xenios.conf -datadir=/var/lib/xeniosd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Xenios Core
+Comment=Xenios P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Xenios peer-to-peer Netzwerk
+Comment[fr]=Xenios, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Xenios, eşten eşe kriptografik sanal para birimi
+Exec=xenios-qt %u
+Terminal=false
+Type=Application
+Icon=xenios128
+MimeType=x-scheme-handler/xenios;
+Categories=Office;Finance;

@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/xenios_ar.qm</file>
+        <file alias="bg">locale/xenios_bg.qm</file>
+        <file alias="de">locale/xenios_de.qm</file>
+        <file alias="en">locale/xenios_en.qm</file>
+        <file alias="es">locale/xenios_es.qm</file>
+        <file alias="fi">locale/xenios_fi.qm</file>
+        <file alias="fr">locale/xenios_fr.qm</file>
+        <file alias="it">locale/xenios_it.qm</file>
+        <file alias="ja">locale/xenios_ja.qm</file>
+        <file alias="ko">locale/xenios_ko.qm</file>
+        <file alias="nl">locale/xenios_nl.qm</file>
+        <file alias="pl">locale/xenios_pl.qm</file>
+        <file alias="pt">locale/xenios_pt.qm</file>
+        <file alias="ru">locale/xenios_ru.qm</file>
+        <file alias="sk">locale/xenios_sk.qm</file>
+        <file alias="sv">locale/xenios_sv.qm</file>
+        <file alias="th">locale/xenios_th.qm</file>
+        <file alias="tr">locale/xenios_tr.qm</file>
+        <file alias="vi">locale/xenios_vi.qm</file>
+        <file alias="zh_CN">locale/xenios_zh_CN.qm</file>
+        <file alias="zh_TW">locale/xenios_zh_TW.qm</file>
+    </qresource>
+</RCC>

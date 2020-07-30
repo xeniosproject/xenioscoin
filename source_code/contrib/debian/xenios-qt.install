@@ -1,0 +1,6 @@
+usr/local/bin/xenios-qt usr/bin
+share/pixmaps/xenios32.xpm usr/share/pixmaps
+share/pixmaps/xenios16.xpm usr/share/pixmaps
+share/pixmaps/xenios128.png usr/share/pixmaps
+debian/xenios-qt.desktop usr/share/applications
+debian/xenios-qt.protocol usr/share/kde4/services/

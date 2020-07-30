@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[xenios.qt-translation-012x]
+file_filter = src/qt/locale/xenios_<lang>.ts
+source_file = src/qt/locale/xenios_en.ts
+source_lang = en
