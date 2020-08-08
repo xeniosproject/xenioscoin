@@ -44,9 +44,9 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 # Download the linux daemon and tools
 
-wget "https://github.com/xeniosproject/xenioscoin/blob/master/xenios-daemon-linux.tar.gz" -O xenios-daemon-linux.tar.gz
+wget "https://github.com/xeniosproject/xenioscoin/raw/master/xenios-daemon-linux.tar.gz" -O xenios-daemon-linux.tar.gz
 
-wget "https://github.com/xeniosproject/xenioscoin/blob/master/xenios-qt-linux.tar.gz" -O xenios-qt-linux.tar.gz
+wget "https://github.com/xeniosproject/xenioscoin/raw/master/xenios-qt-linux.tar.gz" -O xenios-qt-linux.tar.gz
 
 #Extract the tar file.
 
