@@ -21,7 +21,7 @@ Webwallet: https://wallet.xenioscoin.com
 
 # How do I setup Xenios Node on Ubuntu Server 18.04? (The easy way!!!)
 
-#Use Ubuntu 18.04 LTS 64bit.
+# Use Ubuntu 18.04 LTS 64bit.
 
 # Update your Ubuntu machine.
 
@@ -48,23 +48,23 @@ wget "https://github.com/xeniosproject/xenioscoin/raw/master/xenios-daemon-linux
 
 wget "https://github.com/xeniosproject/xenioscoin/raw/master/xenios-qt-linux.tar.gz" -O xenios-qt-linux.tar.gz
 
-#Extract the tar file.
+# Extract the tar file.
 
 tar -xzvf xenios-daemon-linux.tar.gz
 
 tar -xzvf xenios-qt-linux.tar.gz
 
-#Install the daemon.
+# Install the daemon.
 
 sudo mv xeniosd xenios-cli xenios-tx /usr/bin/
 
-#Create the config file.
+# Create the config file.
 
 mkdir $HOME/.xenios
 
 nano $HOME/.xenios/xenios.conf
 
-#Paste the following lines in xenios.conf.
+# Paste the following lines in xenios.conf.
 
 rpcuser=rpc_xenios
 
@@ -98,7 +98,9 @@ addnode=206.81.26.83
 
 addnode=134.209.243.206
 
-#Start your node with the following command.
+
+
+# Start your node with the following command.
 
 xeniosd 
 
