@@ -53,11 +53,12 @@ The following instructions have been tested on fresh Ubuntu 18.04 LTS 64bit:
    ```bash
    sudo mv xeniosd xenios-cli xenios-tx /usr/bin/
    ```
-3. Create default config file (if you wish to change the value of `rpcpassword` make sure a highly complex password is used):
+3. Create default config file:
    ```bash
    # Create configuration Directory
    mkdir $HOME/.xenios
    # Generate a complex random password
+   # if you wish to change the value of rpcpassword make sure a highly complex password is used
    rpcpassword=$(cat /dev/urandom | tr -dc a-zA-Z0-9%^@\!$ | fold -w 36 | head -n 1)
    # Create default config file
    cat > $HOME/.xenios/xenios.conf <<EOF
