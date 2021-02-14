@@ -53,16 +53,16 @@ The following instructions have been tested on fresh Ubuntu 18.04 LTS 64bit:
    ```bash
    sudo mv xeniosd xenios-cli xenios-tx /usr/bin/
    ```
-3. Create default config file:
+3. Create default config file (if you wish to change the value of `rpcpassword` make sure a highly complex password is used):
    ```bash
    # Create configuration Directory
    mkdir $HOME/.xenios
    # Generate a complex random password
-   rpcpassword=$(cat /dev/urandom | tr -dc a-zA-Z0-9%^@ | fold -w 14 | head -n 1)
+   rpcpassword=$(cat /dev/urandom | tr -dc a-zA-Z0-9%^@\!$ | fold -w 36 | head -n 1)
    # Create default config file
    cat > $HOME/.xenios/xenios.conf <<EOF
    rpcuser=rpc_xenios
-   rpcpassword="${rpcpassword}"
+   rpcpassword=${rpcpassword}
    rpcallowip=127.0.0.1
    rpcport=21351
    tcpport=21352
@@ -79,7 +79,6 @@ The following instructions have been tested on fresh Ubuntu 18.04 LTS 64bit:
    addnode=134.209.243.206
    EOF
    ```
-5. Make sure to**change `rpcpassword` value from `a-very-strong-password` to a highly complex and strong password.**
 4. Start the deamon:
    ```bash
    xeniosd 
