@@ -77,7 +77,7 @@ The following instructions have been tested on fresh Ubuntu 18.04 LTS 64bit:
    addnode=134.209.243.206
    EOF
    ```
-5. ***Important:*** Change `rpcpassword` value from `a-very-strong-password` to a highly complex and strong password.
+5. **Change `rpcpassword` value from `a-very-strong-password` to a highly complex and strong password.**
 4. Start the deamon:
    ```bash
    xeniosd 
