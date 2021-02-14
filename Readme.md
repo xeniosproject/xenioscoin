@@ -44,21 +44,16 @@ The following instructions have been tested on fresh Ubuntu 18.04 LTS 64bit:
    sudo apt-get install libdb4.8-dev libdb4.8++-dev
    ```
 ### Create and setup Xenios Deamon
-1. Download pre-compiled deamon:
+1. Download and decompress pre-compiled deamon:
    ```bash
-   wget "https://github.com/xeniosproject/xenioscoin/raw/master/xenios-daemon-linux.tar.gz" -O xenios-daemon-linux.tar.gz
-   wget "https://github.com/xeniosproject/xenioscoin/raw/master/xenios-qt-linux.tar.gz" -O xenios-qt-linux.tar.gz
-   ```
-2. Decompress archive:
-   ```bash
+   wget https://github.com/xeniosproject/xenioscoin/releases/download/1.1/xenios-daemon-1.1.tar.gz -O xenios-daemon-linux.tar.gz
    tar -xzvf xenios-daemon-linux.tar.gz
-   tar -xzvf xenios-qt-linux.tar.gz
    ```
-3. Install the deamon:
+2. Install the deamon:
    ```bash
    sudo mv xeniosd xenios-cli xenios-tx /usr/bin/
    ```
-4. Create default config file:
+3. Create default config file:
    ```bash
    # Create configuration Directory
    mkdir $HOME/.xenios
@@ -82,17 +77,20 @@ The following instructions have been tested on fresh Ubuntu 18.04 LTS 64bit:
    addnode=134.209.243.206
    EOF
    ```
-5. Start the deamon:
+5. ***Important:*** Change `rpcpassword` value from `a-very-strong-password` to a highly complex and strong password.
+4. Start the deamon:
    ```bash
    xeniosd 
    ```
 ### Wallet Setup
 Ready compiled hnc wallets and daemons are available for all 3 major OSes. Pleas follow the steps bellow to set-up.
 1. Download pre-compiled wallet binary for your OS:
-     * Windows:
-     * Linux:
-     * Mac: 
-2. Paste the following files in the `xenio.conf` file:
+     * Windows: https://github.com/xeniosproject/xenioscoin/releases/download/1.1/xenios-wallet-windows-1.1.zip
+     * Linux: https://github.com/xeniosproject/xenioscoin/releases/download/1.1/xenios-wallet-linux-1.1.tar.gz
+     * Mac: https://github.com/xeniosproject/xenioscoin/releases/download/1.1/xenios-wallet-mac-1.1.dmg
+2. Depending on your OS decompress (if nessecairy) and execute the relevant binary file:
+      * Linux: To decompress install and launch run: `tar xzf xenios-wallet-linux-1.1.tar.gz; sudo mv xenios-wallet-1.1/* /usr/local/bin; xenios-qt`
+3. Paste the following files in the `xenios.conf` file (*To access xenios.conf from the wallet UI, from the menu select `Tools` > `Open Wallet Configuration File`*):
    ```bash
    rpcuser=rpc_xenioscoin
    rpcpassword=Your_strong_rpc_password
