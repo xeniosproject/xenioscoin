@@ -84,21 +84,6 @@ txindex=1
 
 daemon=1
 
-addnode=209.97.129.79
-
-addnode=134.122.74.85
-
-addnode=207.154.250.1
-
-addnode=167.172.55.240
-
-addnode=104.248.129.19
-
-addnode=206.81.26.83
-
-addnode=134.209.243.206
-
-
 
 # Start your node with the following command.
 
