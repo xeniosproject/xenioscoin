@@ -72,9 +72,9 @@ rpcpassword=a-very-strong-password
 
 rpcallowip=127.0.0.1
 
-rpcport=21351
+rpcport=31049
 
-tcpport=21352
+tcpport=31050
 
 listen=1
 
@@ -83,6 +83,8 @@ server=1
 txindex=1
 
 daemon=1
+
+maxconnections=16
 
 
 # Start your node with the following command.
@@ -125,9 +127,9 @@ rpcpassword=Your_strong_rpc_password
 
 rpcallowip=127.0.0.1
 
-rpcport=21351
+rpcport=31049
 
-tcpport=21352
+tcpport=31050
 
 listen=1
 
@@ -135,7 +137,7 @@ server=1
 
 daemon=1
 
-maxconnections=64
+maxconnections=16
 
 addnode=node1.xenioscoin.com
 
