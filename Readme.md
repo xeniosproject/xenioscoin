@@ -86,6 +86,18 @@ daemon=1
 
 maxconnections=16
 
+# Official Nodes for synchronization.
+
+addnode=167.99.129.89
+
+addnode=46.101.239.161
+
+addnode=207.154.211.35
+
+addnode=167.71.139.137
+
+addnode=167.99.129.89
+
 
 # Start your node with the following command.
 
